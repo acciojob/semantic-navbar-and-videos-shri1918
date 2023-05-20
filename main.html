@@ -1,16 +1,74 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <title>Semantic Navbar and Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        li {
+            margin-right: 10px;
+        }
+        
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        h2 {
+            margin-top: 20px;
+        }
+        
+        .videos {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        video {
+            width: 30%;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <h2>3 Random Videos</h2>
+    
+    <div class="videos">
+        <video controls>
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <video controls>
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <video controls>
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 </body>
-
 </html>
